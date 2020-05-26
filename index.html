@@ -1,85 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 	<head>
-		<style>
-			.loader {
-			  width: 25%;
-			  position: relative;
-			  margin: 0px auto;
-			}
-			.circular,
-			.circular2 {
-			  height: 100%;
-			  transform-origin: center center;
-			  width: 100%;
-			  position: absolute;
-			  top: 0; bottom: 0; left: 0; right: 0;
-			  margin: auto;
-			}
-			.circular {
-			  animation: rotate 2s linear infinite;
-			}
-			.circular2 {
-			  animation: rotate-reverse 4s linear infinite;
-			}
-			.path,
-			.path2,
-			.path3 {
-			  stroke-linecap: square;
-			  stroke-width: 22;
-			}
-			.path {
-			  stroke-dasharray: 20,2600;
-			  stroke-dashoffset: 0;
-			  animation: dash 1.5s ease-in-out infinite;
-			}
-			.path2 {
-			  stroke-dasharray: 200,2600;
-			  stroke-dashoffset: 0;
-			}
-			.path3 {
-			  stroke-dasharray: 200,2600;
-			  stroke-dashoffset: 1700;
-			}
-
-			@keyframes rotate{
-			 100%{
-			  transform: rotate(360deg);
-			 }
-			}
-
-			@keyframes rotate-reverse {
-			 100%{
-			  transform: rotate(-360deg);
-			 }
-			}
-			@keyframes dash{
-			 0%{
-			  stroke-dasharray: 20,2600;
-			  stroke-dashoffset: 0;
-			 }
-			 50%{
-			  stroke-dasharray: 2100,2600;
-			  stroke-dashoffset: -800px;
-			 }
-			 100%{
-			  stroke-dasharray: 2100,2600;
-			  stroke-dashoffset: -2000px;
-			 }
-			}
-			body {
-			  background: #333;
-			}
-		</style>
-	<head>
+		<meta charset="UTF-8">
+		<title>Ezra Zike</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="icon" type="image/png" href="./images/icon.png" sizes="16x16"/>
+		<link rel="stylesheet" href="./style.css">
+	</head>
 	<body>
-		<div class="loader">
-			<svg class="logo" viewbox="0 0 750 750">
-				
-			</svg>
-			<svg class="circular" viewbox="0 0 750 750">
-				<circle class="path" cx="375" cy="375" r="325" stroke="#C0C0C0"  fill="none" />
-			</svg>
+		<div class="container demo">
+		   <div class="content">
+			  <div id="large-header" class="large-header">
+			  	<video autoplay loop muted>
+					<source src="./videos/bubbles.mp4" type="video/mp4"/>
+				</video>
+				 <canvas id="demo-canvas"></canvas>
+				 <h1 class="main-title"><span class="thin">Under</span> Construction</h1>
+				 <div class="social-media">
+					<a href="https://www.instagram.com/ezrazike/"><img src="./images/instagram.png"></a>
+					<a href="https://twitter.com/ayoeazye"><img src="./images/twitter.png"></a>
+					<a href="https://www.snapchat.com/add/ezrazike"><img src="./images/snapchat.png"></a>
+					<a href="https://github.com/EzraZike"><img src="./images/github.png"></a>
+					<a href="https://www.linkedin.com/in/ezra-zike-802931177/"><img src="./images/linkedin.png"></a>
+					<a href="mailto:ezrazike@gmail.com"><img src="./images/email.png"></a>
+				 </div>
+			  </div>			  
+		   </div>
 		</div>
+		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script><script  src="./script.js"></script>
 	</body>
-</html>	
+</html>
