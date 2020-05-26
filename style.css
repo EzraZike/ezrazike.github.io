@@ -37,14 +37,18 @@
 
 .social-media {
    position: absolute;
+   margin: 0;
    padding: 0;
-   top: 55%;
-   left: 50%; 
+   text-align: center;
+   top: 50%;
+   left: 50%;
    transform: translate3d(-50%, -50%, 0);
 }
 
+
 .social-media img {
-   padding: 5px;
+   padding: 3px;
+   width: 15%;
 }
 
 .vid {
