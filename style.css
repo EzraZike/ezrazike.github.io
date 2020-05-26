@@ -40,15 +40,16 @@
    margin: 0;
    padding: 0;
    text-align: center;
-   top: 50%;
+   top: 55%;
    left: 50%;
    transform: translate3d(-50%, -50%, 0);
+   -webkit-transform: translate3d(-50%, -50%, 0);
 }
 
 
 .social-media img {
    padding: 3px;
-   width: 15%;
+   width: 8%;
 }
 
 .vid {
