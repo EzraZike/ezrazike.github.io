@@ -9,7 +9,8 @@
 }
 
 .demo .large-header {
-   background-image: url("./images/bubbles.gif");
+   /*background-image: url("./images/bubbles.gif");*/   
+   position: absolute;
 }
 
 
@@ -27,8 +28,8 @@
 
 .demo .main-title {
    text-transform: uppercase;
-   font-size: 4.2em;
-   letter-spacing: 0.1em;
+   font-size: 4.2vw;
+   letter-spacing: 0.1vw;
 }
 
 .main-title .thin {
@@ -54,6 +55,7 @@
 
 .vid {
    position: absolute;
+   z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
